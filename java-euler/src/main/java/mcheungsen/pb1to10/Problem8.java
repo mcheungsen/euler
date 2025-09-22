@@ -1,8 +1,6 @@
-package mcheungsen.pb1to50;
+package mcheungsen.pb1to10;
 
 import mcheungsen.Problem;
-
-import java.math.BigInteger;
 
 public class Problem8 implements Problem {
 

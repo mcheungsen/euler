@@ -18,7 +18,9 @@ public class Main {
                 System.out.println("Exit");
                 break;
             }
-            String className = "mcheungsen.pb1to50.Problem" + problemNumber;
+            int start = ((problemNumber - 1) / 10) * 10 + 1;
+            int end = start + 9;
+            String className = "mcheungsen.pb"+start+"to"+end+".Problem" + problemNumber;
             try {
                 Class<?> problemClass = Class.forName(className);
                 Problem problem = (Problem) problemClass.getDeclaredConstructor().newInstance();
